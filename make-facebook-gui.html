@@ -1,98 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="make-facebook-gui.css">
     <title>FaceTime</title>
 </head>
+
 <body>
     <nav>
         <div class="nav-left">
             <div class="stlogo">
-            <img src="logos.png" alt="logo FaceTime" class="logo" id="lg">
-        </div>
+                <img src="logos.png" alt="logo FaceTime" class="logo" id="lg">
+            </div>
             <div id="dlt"></div>
             <div class="search-box" id="searchbx">
-                <form action="">         
+                <form action="">
                     <input type="text" placeholder="Search on FaceTime" id="inputhere" class="" autocomplete="off" onclick="DropDownToggle()">
                     <div class="dropdown" id="dr">
                         <span id="Searchnear">Recent Search :</span>
                         <span id="Searchnear1"><div>Settings</div> <span id="circle6"></span></span>
-                        <span id="line3"><span id="fline3"><img id="topsong" src="topsong.jpg"> <p id="tops">Top Songs Radio</p><div id="st"><img src="xs.png"id="topss"><span id="cr"></span></div></span></span>
-                        <span id="line4"><span id="fline4"><img id="topsong1" src="clock5.png"> <p id="tops1">Wang Thanh Tran</p><div id="st1"><img src="xs.png"id="topss1"><span id="cr1"></span></div></span></span>
-                        <span id="line5"><span id="fline5"><img id="topsong2" src="clock5.png"> <p id="tops2">Hover the search box</p><div id="st2"><img src="xs.png"id="topss2"><span id="cr2"></span></div></span></span>
-                        <span id="line6"><span id="fline6"><img id="topsong3" src="clock5.png"> <p id="tops3">To see recent search </p> <div id="st3"> <img src="xs.png"id="topss3"><span id="cr3"></span></div></span></span>
-                        <span id="line7"><span id="fline7"><img id="topsong4" src="elites.jpg"> <p id="tops4">Elite classroom  </p><div id="st4"><img src="xs.png" id="topss4"><span id="cr4"></span></div></span></span>
-                        <span id="line8"><span id="fline8"><img id="topsong5" src="clock5.png"> <p id="tops5">League of Legends  </p><div id="st5"><img src="xs.png"id="topss5"><span id="cr5"></span></div></span></span>
-                        <span id="line9"><span id="fline9"><img id="topsong6" src="bius.jpg"> <p id="tops6">Bi Usagii</p><div id="st6"><img src="xs.png"id="topss6"><span id="cr6"></span></div></span></span>
-                    </div>
-                </form>
-            </div>
-            <div class="feature">
+                        <span id="line3"><span id="fline3"><img id="topsong" src="topsong.jpg"> <p id="tops">Top Songs Radio</p><div id="st"><img src="xs.png"id="topss"><span id="cr"></span></div>
+                    </span>
+                    </span>
+                    <span id="line4"><span id="fline4"><img id="topsong1" src="clock5.png"> <p id="tops1">Wang Thanh Tran</p><div id="st1"><img src="xs.png"id="topss1"><span id="cr1"></span></div>
+            </span>
+            </span>
+            <span id="line5"><span id="fline5"><img id="topsong2" src="clock5.png"> <p id="tops2">Hover the search box</p><div id="st2"><img src="xs.png"id="topss2"><span id="cr2"></span></div>
+        </span>
+        </span>
+        <span id="line6"><span id="fline6"><img id="topsong3" src="clock5.png"> <p id="tops3">To see recent search </p> <div id="st3"> <img src="xs.png"id="topss3"><span id="cr3"></span></div>
+        </span>
+        </span>
+        <span id="line7"><span id="fline7"><img id="topsong4" src="elites.jpg"> <p id="tops4">Elite classroom  </p><div id="st4"><img src="xs.png" id="topss4"><span id="cr4"></span></div>
+        </span>
+        </span>
+        <span id="line8"><span id="fline8"><img id="topsong5" src="clock5.png"> <p id="tops5">League of Legends  </p><div id="st5"><img src="xs.png"id="topss5"><span id="cr5"></span></div>
+        </span>
+        </span>
+        <span id="line9"><span id="fline9"><img id="topsong6" src="bius.jpg"> <p id="tops6">Bi Usagii</p><div id="st6"><img src="xs.png"id="topss6"><span id="cr6"></span></div>
+        </span>
+        </span>
+        </div>
+        </form>
+        </div>
+        <div class="feature">
             <ul>
-                <li><span class="homem"><a id ="Home"  mota1="Home"><img src="homes7.png" id="hm"><div id="fromhome"></div><span class="circle1"></span></a></span></li>
-                <li><a id ="Friend" mota2="Friends"><img src="friend.png"><span class="circle2"></span></a></li>
-                <li><a id ="Watch" mota3="Watchs"><img src="images/video.png"><span class="circle3"></span></a></li>
-                <li><a id ="marketplaces" mota4="Marketplaces" ><img src="markats.png" ><span class="circle4"></span></a></li>
-                <li><a id ="Game" mota5="Games"><img src="images.png" id="other"><span class="circle5"></span></a></li>
+                <li><span class="homem"><a id ="Home"  mota1="Home"><img src="homes7.png" id="hm"><div id="fromhome"></div><span class="circle1"></span></a>
+                    </span>
+                </li>
+                <li>
+                    <a id="Friend" mota2="Friends"><img src="friend.png"><span class="circle2"></span></a>
+                </li>
+                <li>
+                    <a id="Watch" mota3="Watchs"><img src="images/video.png"><span class="circle3"></span></a>
+                </li>
+                <li>
+                    <a id="marketplaces" mota4="Marketplaces"><img src="markats.png"><span class="circle4"></span></a>
+                </li>
+                <li>
+                    <a id="Game" mota5="Games"><img src="images.png" id="other"><span class="circle5"></span></a>
+                </li>
             </ul>
         </div>
         </div>
         <div class="nav-right">
             <div class="usern">
-            <ul>
-            <li id="main"> <span id="mains" mota="Notification" ><span id ="notification" mota="Notification" class="not"><img id="noti"src="images/notificationss.png"><span class="circle"></span></span></span></li>
-            <li id="main1"> <span id="mains1" mota="Messages" ><span id ="notification1" mota="Messages" class="not1"><img id="noti1"src="images/commentss.png"><span class="circle1s"></span></span></span></li>
-            <li id="main2"> <span id="mains2" mota="Menu" ><span id ="notification2" mota="Menu" class="not2"><img id="noti2"src="menus.png"><span class="circle2s"></span></span></span></li>
-        </ul>
-            <div class="nav-user-icon  online" onclick="SettingsMenuToggle()">
-                <img src="profile.jpg" width="40px" id="profi">
+                <ul>
+                    <li id="main"> <span id="mains" mota="Notification"><span id ="notification" mota="Notification" class="not"><img id="noti"src="images/notificationss.png"><span class="circle"></span></span>
+                        </span>
+                    </li>
+                    <li id="main1"> <span id="mains1" mota="Messages"><span id ="notification1" mota="Messages" class="not1"><img id="noti1"src="images/commentss.png"><span class="circle1s"></span></span>
+                        </span>
+                    </li>
+                    <li id="main2"> <span id="mains2" mota="Menu"><span id ="notification2" mota="Menu" class="not2"><img id="noti2"src="menus.png"><span class="circle2s"></span></span>
+                        </span>
+                    </li>
+                </ul>
+                <div class="nav-user-icon  online" onclick="SettingsMenuToggle()">
+                    <img src="profile.jpg" width="40px" id="profi">
+                </div>
             </div>
         </div>
-     </div>
-    <div class="setting-menu">
-     <span id="threed">
+        <div class="setting-menu">
+            <span id="threed">
      <span id="crmenu1">
         <div id="dark-btn">
             <span></span>
         </div>
         <img id="postpr1" src="profile.jpg">
-        <span id="namepost1" >Wang Tom Tran</span>
+        <span id="namepost1">Wang Tom Tran</span>
         <span id="strmenu"></span>
-    </span>
-    <span id="crmenu2">
+        </span>
+        <span id="crmenu2">
         <span id="account">See all accounts</span>
         <span id="num">2</span>
         <span id="nonum"></span>
-    </span>
+        </span>
         </span>
         <span id="mn1">
         <img src="images/setting.png" id="setting-icon">
         <span id="menuname1">Settings & privacy</span>
         <img src="greater-than-icon-16.png" id="moremenu">
-    </span>
-    <span id="mn2">
+        </span>
+        <span id="mn2">
         <img src="images/help.png" id="setting-icon">
         <span id="menuname1">Help & support</span>
         <img src="greater-than-icon-16.png" id="moremenu1">
-    </span>
-    <span id="mn3">
+        </span>
+        <span id="mn3">
         <img src="images/display.png" id="setting-icon">
         <span id="menuname1">Display & Accessibility</span>
         <img src="greater-than-icon-16.png" id="moremenu2">
-    </span>
-    <span id="mn4">
+        </span>
+        <span id="mn4">
         <img src="images/feedback.png" id="setting-icon">
         <span id="menuname1">Settings & private</span>
-    </span>
-    <span id="mn5">
+        </span>
+        <span id="mn5">
         <img src="images/logout.png" id="setting-icon">
         <span id="menuname1">Logout</span>
-    </span>
-    <a href="#" ><span id="ln3">Privacy • Rules • Advertisement</span></a>
-    <a href="#" ><div id="ln4">Cookie • See more • Megame © 2022</div></a>
+        </span>
+        <a href="#"><span id="ln3">Privacy • Rules • Advertisement</span></a>
+        <a href="#">
+            <div id="ln4">Cookie • See more • Megame © 2022</div>
+        </a>
 
         </div>
     </nav>
@@ -100,88 +134,175 @@
         <!--------------------------left-sidebar--------------------------->
         <div class="left-sidebar">
             <div id="ck">
-            <div class="ipt-links"></div>
-            <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="profile.jpg" alt="profile img" id="pr"><p id="namepr">Wang Tom Tran</p></div></div></a>
-            <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="S0U5ECzYUSu.png" alt="profile img" id="pr1"><p id="namepr1">Friends</p></div></div></a>
-            <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="lVijPkTeN-r.png" alt="profile img" id="pr2"><p id="namepr2">Saved</p></div></div></a>
-            <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="PrjLkDYpYbH.png" alt="profile img" id="pr3"><p id="namepr3">Groups</p></div></div></a>
-            <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="he-BkogidIc.png" alt="profile img" id="pr4"><p id="namepr4">Celebrate</p></div></div></a>
-            <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="qfMB40PdgWb.png" alt="profile img" id="pr5"><p id="namepr5">Events</p></div></div></a>
-            <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><span id="cs"></span><img src="mores.png" alt="profile img" id="pr6"><p id="namepr6">See more</p></div></div></a>
-            <div id="str"></div>
-            <div id="shortcuts">
-                <div id="move">Your shortcuts</div>     
-                <div id="st2sc"><p id="stshortcut">Settings</p><span id="circle6sc"></span></div>
-                <div id="scst">
-                <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="usuk.jpg" alt="profile img" id="pr8"><p id="namepr">Music US-UK</p></div></div></a>
-                <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="alanime.jpg" alt="profile img" id="pr8"><p id="namepr1">AL Anime</p></div></div></a>
-                <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="legss.png" alt="profile img" id="pr8"><p id="namepr2">League of Legends</p></div></div></a>
-                <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="laptrinhne.jpg" alt="profile img" id="pr9"><p id="namepr8">Lap Trinh C,C++,C#,Java,Python,PHP...</p></div></div></a>
-                <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="animes.jpg" alt="profile img" id="pr8"><p id="namepr4">Anime Va Nghien Nhac</p></div></div></a>
-                <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><img src="onep1.jpg" alt="profile img" id="pr8"><p id="namepr7">One Piece Viet Nam</p></div></div></a>
-                <a href="#" id="lk1"><div id="stprofile"><div id="backgroundpf"><span id="cs"></span><img src="mores.png" alt="profile img" id="pr6"><p id="namepr6">See more</p></div></div></a>
-                <a href="#" ><span id="ln1">Privacy • Rules • Advertisement</span></a>
-                <a href="#" ><div id="ln2">Cookie • See more • Megame © 2022</div></a>
+                <div class="ipt-links"></div>
+                <a href="https://www.facebook.com/quang.tranthanh.71868/" id="lk1">
+                    <div id="stprofile">
+                        <div id="backgroundpf"><img src="profile.jpg" alt="profile img" id="pr">
+                            <p id="namepr">Wang Tom Tran</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/friends" id="lk1">
+                    <div id="stprofile">
+                        <div id="backgroundpf"><img src="S0U5ECzYUSu.png" alt="profile img" id="pr1">
+                            <p id="namepr1">Friends</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/saved/?cref=28" id="lk1">
+                    <div id="stprofile">
+                        <div id="backgroundpf"><img src="lVijPkTeN-r.png" alt="profile img" id="pr2">
+                            <p id="namepr2">Saved</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/feed/" id="lk1">
+                    <div id="stprofile">
+                        <div id="backgroundpf"><img src="PrjLkDYpYbH.png" alt="profile img" id="pr3">
+                            <p id="namepr3">Groups</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/memories/?source=bookmark" id="lk1">
+                    <div id="stprofile">
+                        <div id="backgroundpf"><img src="he-BkogidIc.png" alt="profile img" id="pr4">
+                            <p id="namepr4">Celebrate</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/events?source=46&action_history=null" id="lk1">
+                    <div id="stprofile">
+                        <div id="backgroundpf"><img src="qfMB40PdgWb.png" alt="profile img" id="pr5">
+                            <p id="namepr5">Events</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" id="lk1">
+                    <div id="stprofile">
+                        <div id="backgroundpf"><span id="cs"></span><img src="mores.png" alt="profile img" id="pr6">
+                            <p id="namepr6">See more</p>
+                        </div>
+                    </div>
+                </a>
+                <div id="str"></div>
+                <div id="shortcuts">
+                    <div id="move">Your shortcuts</div>
+                    <div id="st2sc">
+                        <p id="stshortcut">Settings</p><span id="circle6sc"></span></div>
+                    <div id="scst">
+                        <a href="https://www.facebook.com/weareMusicUSUK" id="lk1">
+                            <div id="stprofile">
+                                <div id="backgroundpf"><img src="usuk.jpg" alt="profile img" id="pr8">
+                                    <p id="namepr">Music US-UK</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100072144639166" id="lk1">
+                            <div id="stprofile">
+                                <div id="backgroundpf"><img src="alanime.jpg" alt="profile img" id="pr8">
+                                    <p id="namepr1">AL Anime</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/leagueoflegends" id="lk1">
+                            <div id="stprofile">
+                                <div id="backgroundpf"><img src="legss.png" alt="profile img" id="pr8">
+                                    <p id="namepr2">League of Legends</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/groups/laptrinh.IT" id="lk1">
+                            <div id="stprofile">
+                                <div id="backgroundpf"><img src="laptrinhne.jpg" alt="profile img" id="pr9">
+                                    <p id="namepr8">Lap Trinh C,C++,C#,Java,Python,PHP...</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/groups/4334831589926656" id="lk1">
+                            <div id="stprofile">
+                                <div id="backgroundpf"><img src="animes.jpg" alt="profile img" id="pr8">
+                                    <p id="namepr4">Anime Va Nghien Nhac</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/groups/610345865813837" id="lk1">
+                            <div id="stprofile">
+                                <div id="backgroundpf"><img src="onep1.jpg" alt="profile img" id="pr8">
+                                    <p id="namepr7">One Piece Viet Nam</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" id="lk1">
+                            <div id="stprofile">
+                                <div id="backgroundpf"><span id="cs"></span><img src="mores.png" alt="profile img" id="pr6">
+                                    <p id="namepr6">See more</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#"><span id="ln1">Privacy • Rules • Advertisement</span></a>
+                        <a href="#">
+                            <div id="ln2">Cookie • See more • Megame © 2022</div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            </div>  
         </div>
-    </div>
-          <!--------------------------Main-content--------------------------->
+        <!--------------------------Main-content--------------------------->
         <div class="main-content">
-          <div class="story">
-            <div class="sto">
-                <img src="images/upload1.png">
-                <span id="sr"></span>
-                <span id="sr1"></span>
-                <span id="sr2"></span>
-                <div id="sr3"></div>
-                <span id="namesto">Post story</span>
+            <div class="story">
+                <div class="sto">
+                    <img src="images/upload1.png">
+                    <span id="sr"></span>
+                    <span id="sr1"></span>
+                    <span id="sr2"></span>
+                    <div id="sr3"></div>
+                    <span id="namesto">Post story</span>
+                </div>
+                <div class="sto1">
+                    <img id="imgsr" src="jus.jpg">
+                    <div id="sr31"></div>
+                    <span id="namestor">Justin Bieber</span>
+                </div>
+                <div class="sto2">
+                    <img id="imgsr1" src="bob.jpg">
+                    <div id="sr3"></div>
+                    <span id="namestor">King Bob </span>
+                </div>
+                <div class="sto3">
+                    <img id="imgsr" src="neferpitous1.jpg">
+                    <div id="sr3"></div>
+                    <span id="namestor">Neferpitou</span>
+                </div>
+                <div class="sto4">
+                    <img id="imgsr" src="gon.jpg">
+                    <div id="sr32"></div>
+                    <span id="namestor">Gon Freecss</span>
+                </div>
+
             </div>
-            <div class="sto1">
-                <img id="imgsr" src="jus.jpg">
-                <div id="sr31"></div>
-                <span id="namestor">Justin Bieber</span>
-            </div>
-            <div class="sto2">
-                <img id="imgsr1" src="bob.jpg">
-                <div id="sr3"></div>
-                <span id="namestor">King Bob </span>
-            </div>
-            <div class="sto3">
-                <img id="imgsr" src="neferpitous1.jpg">
-                <div id="sr3"></div>
-                <span id="namestor">Neferpitou</span>
-            </div>
-            <div class="sto4">
-                <img id="imgsr" src="gon.jpg">
-                <div id="sr32"></div>
-                <span id="namestor">Gon Freecss</span>
-            </div>
-           
-        </div>
-        <div class="post-cont">
-            <div class="user-prof">
-                <img id="postpr" src="profile.jpg">
-                <span id="crpost"></span>
-                <span id="thinks">
+            <div class="post-cont">
+                <div class="user-prof">
+                    <img id="postpr" src="profile.jpg">
+                    <span id="crpost"></span>
+                    <span id="thinks">
                     <p id="wthink">Tran, what are you thinking?</p>
                 </span>
-                <span id="poststr"></span>
-                <span id="live">
+                    <span id="poststr"></span>
+                    <span id="live">
                   <img id="lives">
                 </span>
-                <span id="livestr">
+                    <span id="livestr">
                 <img src="new2.png" id="lv">
                 <span id="lsv">Live stream videos</span>
-                <span>
+                    <span>
                  <span id="vdph">
                 <img src="new1.png" id="pt">
                 <span id="vdphs">Photos/videos</span>
-                <span>
+                    <span>
                 <span id="fell">
                 <img src="images/feeling.png" id="fellimg">
                 <span id="fel">Felling/Activity</span>
-                <span> 
+                    <span> 
             </div>
             <div id="metpost">
                 <span id="crmet">
@@ -193,78 +314,92 @@
                     <img src="tai.jpg" id="jusimgmet2"> <span id="nmmet2" class="onlimg2"></span>
                     <img src="khoa.jpg" id="jusimgmet3"> <span id="nmmet3" class="onlimg3"></span>
                     <img src="neferpitous1.jpg" id="jusimgmet4"> <span id="nmmet4" class="onlimg4"></span>
-                    <img src="gon.jpg" id="jusimgmet5"> <span id="nmmet5" class="onlimg5"></span>   
-                </span>
+                    <img src="gon.jpg" id="jusimgmet5"> <span id="nmmet5" class="onlimg5"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="postmain">
+                <img id="postpr" src="profile.jpg">
+                <span id="crpost"></span>
+                <span id="namepost">Wang Tom Tran</span>
+                <span id="timepost">9 minutes</span>
+                <span id="dc">.</span>
+                <img src="publ1.png" id="pub">
+                <span id="cpost"><img id="smpost" src="images/see-mores.png"></span>
+                <span id="ttpost">Sad spider man edit. Loving You Is a Losing Game || Peter & Gwen (+No Way Home)</span>
+                <a href="#" id="linkpost1">#Arcade</a>
+                <a href="#" id="linkpost2">#MakeRaimiSpiderMan4</a>
+                <a href="#" id="linkpost3">#PeterParker</a>
+                <span id="lkpost">Link sourch video: </span>
+                <span id="blbg"></span>
+                <a href="https://www.youtube.com/watch?v=xLZzXIcLsgs" id="linkpost4" target="_blank">https://www.youtube.com/watch?v=xLZzXIcLsgs</a>
+                <video src="y2meta.com-LovingYouIsaLosingGame.mp4" width="685px" id="if" controls loop></video>
+                <img id="likes" src="like.png">
+                <img src="heart-icon-jst.png" id="heart">
+                <img src="facebook-sad.png" id="haha">
+                <a href="#" id="emonum">Justin Bieber and 20,02k others</a>
+                <a href="#" id="comments">9k comments</a>
+                <a href="#" id="shares">3,5k shares</a>
+                <span id="strmain"></span>
+                <div id="wtemo">
+                    <span id="wtcr"></span>
+                    <img id="wtlike" src="thumbs-up-facebook-logo-png-transparent-svg-vector.png">
+                    <span id="namewt">Likes</span>
+                </div>
+                <div id="wtemo1">
+                    <span id="wtcr"></span>
+                    <img id="wtlike1" src="share-icon-png-14.png">
+                    <span id="namewt1">Shares</span>
+                </div>
+                <div id="wtemo2">
+                    <span id="wtcr"></span>
+                    <img id="wtlike2" src="comment.png">
+                    <span id="namewt2">Comments</span>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="loadmore">Load more</button>
             </div>
         </div>
-        <div class="postmain">
-            <img id="postpr" src="profile.jpg">
-            <span id="crpost"></span>
-            <span id="namepost" >Wang Tom Tran</span>
-            <span id="timepost">9 minutes</span>
-            <span id="dc">.</span>
-            <img src="publ1.png" id="pub"> 
-            <span id="cpost"><img id="smpost" src="images/see-mores.png"></span>
-            <span id="ttpost">Sad spider man edit. Loving You Is a Losing Game || Peter & Gwen (+No Way Home)</span>
-            <a href="#" id="linkpost1">#Arcade</a>
-            <a href="#" id="linkpost2">#MakeRaimiSpiderMan4</a>
-            <a href="#" id="linkpost3">#PeterParker</a>
-            <span id="lkpost">Link sourch video: </span>
-            <span id="blbg"></span>
-            <a href="https://www.youtube.com/watch?v=xLZzXIcLsgs" id="linkpost4" target="_blank">https://www.youtube.com/watch?v=xLZzXIcLsgs</a>
-            <video src="y2meta.com-LovingYouIsaLosingGame.mp4" width="685px" id="if" controls loop></video>
-            <img id="likes" src="like.png">
-            <img src="heart-icon-jst.png" id="heart">
-            <img src="facebook-sad.png" id="haha">
-            <a href="#" id="emonum">Justin Bieber and 20,02k others</a>
-            <a href="#" id="comments">9k comments</a>
-            <a href="#" id="shares">3,5k shares</a>
-            <span id="strmain"></span>
-            <div id="wtemo">
-                <span id="wtcr"></span>
-                <img id="wtlike" src="thumbs-up-facebook-logo-png-transparent-svg-vector.png">
-                <span id="namewt">Likes</span>
-            </div>
-            <div id="wtemo1">
-                <span id="wtcr"></span>
-                <img id="wtlike1" src="share-icon-png-14.png">
-                <span id="namewt1">Shares</span>
-            </div>
-            <div id="wtemo2">
-                <span id="wtcr"></span>
-                <img id="wtlike2" src="comment.png">
-                <span id="namewt2">Comments</span>
-            </div>
-        </div>
-        <div>
-            <button type="button" class="loadmore">Load more</button>
-        </div>
-    </div>
 
-          <!--------------------------right-sidebar--------------------------->   
-         <div class="right-sidebar">
+        <!--------------------------right-sidebar--------------------------->
+        <div class="right-sidebar">
             <div id="adti">
                 <span id="ad">Sponsored by</span>
-                <div id="adver"><span id="three"><img src="docs.png" id="doc"></span><a href="https://leagueoflegends.com/" id="linkadv" target ="_blank"><div id="bgad"><img src="lol4.png" id="lol"><p id="namead">League of Legends</p><p id="linkad">leagueoflegends.com</p></div></a></div>
-                <div id="adver"><span id="three"><img src="docs.png" id="doc"></span><a href="https://www.youtube.com/c/leagueoflegends" id="linkadv" target ="_blank"><div id="bgad"><img src="goes1.png" id="lol"><p id="namead">Riot Entertainment</p><p id="linkad">riotfilm.com</p></div></a></div>
+                <div id="adver"><span id="three"><img src="docs.png" id="doc"></span>
+                    <a href="https://leagueoflegends.com/" id="linkadv" target="_blank">
+                        <div id="bgad"><img src="lol4.png" id="lol">
+                            <p id="namead">League of Legends</p>
+                            <p id="linkad">leagueoflegends.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="adver"><span id="three"><img src="docs.png" id="doc"></span>
+                    <a href="https://www.youtube.com/c/leagueoflegends" id="linkadv" target="_blank">
+                        <div id="bgad"><img src="goes1.png" id="lol">
+                            <p id="namead">Riot Entertainment</p>
+                            <p id="linkad">riotfilm.com</p>
+                        </div>
+                    </a>
+                </div>
                 <div id="chek"></div>
                 <div id="str1"></div>
             </div>
             <div id="Fr">
-             <span id="fri">Friend request</span>
-             <span id="fri2"><div>See all</div> <span id="circlefri2"></span></span>
-             <div id="jus">
-                <div id="stjus"></div>
-                <div id="bgjus">
-                    <img id="imgjus" src="jus.jpg">
-                    <span id="namejus">Justin Bieber</span>
-                    <img id="real" src="Tich-xanh.png">
-                    <span id="timejus">2 hours</span>
-                    <span id="bluecr"></span>  
-                </div>
-                <span id="yes">
+                <span id="fri">Friend request</span>
+                <span id="fri2"><div>See all</div> <span id="circlefri2"></span></span>
+                <div id="jus">
+                    <div id="stjus"></div>
+                    <div id="bgjus">
+                        <img id="imgjus" src="jus.jpg">
+                        <span id="namejus">Justin Bieber</span>
+                        <img id="real" src="Tich-xanh.png">
+                        <span id="timejus">2 hours</span>
+                        <span id="bluecr"></span>
+                    </div>
+                    <span id="yes">
                     <span id="cryes"></span>
-                        <span id="nameyes">Confirm</span>
+                    <span id="nameyes">Confirm</span>
                     </span>
                     <div id="no">
                         <span id="crno"></span>
@@ -272,29 +407,38 @@
                     </div>
                 </div>
                 <div id="str2"></div>
-                </div>
-                <div id="Meslist">
-                    <span id="ct">Contacts</span>
-                    <span id="c1"><img id="came" src="came.png"></span>
-                    <span id="c2"><img id="sc" src="images/searchs.png"></span>
-                    <span id="c3"><img id="sm" src="images/see-mores.png"></span>
-                    <div id="sett">
-                    <span id="cont"><span id="conts"><img src="jus.jpg" id="jusimg2"> <span id="nm" class="ols">Justin Bieber</span></span></span>
-                    <span id="cont1"><span id="conts"><img src="khoa.jpg" id="jusimg2"> <span id="nm" class="ols">Tran Duy Khoa</span></span></span>
-                    <span id="cont2"><span id="conts"><img src="longs.jpg" id="jusimg2"> <span id="nm" class="ols">Dominic Minh Long</span></span></span> 
-                    <span id="cont3"><span id="conts"><img src="tai.jpg" id="jusimg2"> <span id="nm" class="ols">Tai Db</span></span></span>
-                    <span id="cont4"><span id="conts"><img src="linh.jpg" id="jusimg2"> <span id="nm" class="ols">Thuy Linh</span></span></span> 
-                    <span id="cont5"><span id="conts"><img src="neferpitous1.jpg" id="jusimg2"> <span id="nm" class="ols">Neferpitou</span></span></span> 
-                    <span id="cont6"><span id="conts"><img src="gon.jpg" id="jusimg2"> <span id="nm" class="ols">Gon Freecss</span></span></span>
-                </div>  
-                <span id="newm"><span id="newms" ns="New messages"><img src="newmess1.png" id="newmimg"></span></span>
-             </div>
             </div>
-         </div>
+            <div id="Meslist">
+                <span id="ct">Contacts</span>
+                <span id="c1"><img id="came" src="came.png"></span>
+                <span id="c2"><img id="sc" src="images/searchs.png"></span>
+                <span id="c3"><img id="sm" src="images/see-mores.png"></span>
+                <div id="sett">
+                    <span id="cont"><span id="conts"><img src="jus.jpg" id="jusimg2"> <span id="nm" class="ols">Justin Bieber</span></span>
+                    </span>
+                    <span id="cont1"><span id="conts"><img src="khoa.jpg" id="jusimg2"> <span id="nm" class="ols">Tran Duy Khoa</span></span>
+                    </span>
+                    <span id="cont2"><span id="conts"><img src="longs.jpg" id="jusimg2"> <span id="nm" class="ols">Dominic Minh Long</span></span>
+                    </span>
+                    <span id="cont3"><span id="conts"><img src="tai.jpg" id="jusimg2"> <span id="nm" class="ols">Tai Db</span></span>
+                    </span>
+                    <span id="cont4"><span id="conts"><img src="linh.jpg" id="jusimg2"> <span id="nm" class="ols">Thuy Linh</span></span>
+                    </span>
+                    <span id="cont5"><span id="conts"><img src="neferpitous1.jpg" id="jusimg2"> <span id="nm" class="ols">Neferpitou</span></span>
+                    </span>
+                    <span id="cont6"><span id="conts"><img src="gon.jpg" id="jusimg2"> <span id="nm" class="ols">Gon Freecss</span></span>
+                    </span>
+                </div>
+                <span id="newm"><span id="newms" ns="New messages"><img src="newmess1.png" id="newmimg"></span></span>
+            </div>
+        </div>
     </div>
-     
-   <script src="script.js"></script>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
 <!--299-->
 <!--300-->
+<!--299-->
